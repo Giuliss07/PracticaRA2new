@@ -1,0 +1,590 @@
+:root{
+    --color-primario: #FAF4E6;
+    --color-fondoP: #93BFC7;
+    --color-fondo:  #ECF4E8;
+    --otro: rgb(153, 180, 109);
+}
+
+/* INDEX*/
+
+body{
+    background-color: var(--color-fondo);
+}
+
+
+.tituloP{
+    display: flex;
+    justify-content: center;
+    color: var(--color-primario);
+    background-color: var(--color-fondoP);
+    text-align: center;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    font-size: 30px;
+}
+
+
+.nav1{
+    position: absolute;
+    right: 15%;
+    top: calc(50% - 350px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 300px;
+    height: 700px;
+    background-color: var(--color-fondo);
+    border-style: dashed;
+    border-color: var(--color-fondoP);
+}
+
+.nav1 a{
+    color: black;
+    text-decoration: double;
+    border: var(--color-fondoP) solid;
+    padding: 20px;
+    transition: transform 0.3s, font-weight 0.3s;
+    font-size: 30px;
+}
+
+.nav1 a:hover{
+    font-weight: bold;  
+    transform: scale(1.1);
+    background-color: var(--otro);
+}
+
+#I{
+    font-weight: bold;  
+    background-color: var(--otro);
+}
+
+body .marco{
+    position: absolute;
+    bottom: calc(50% - 350px);
+    left: calc(50% - 300px);
+
+    width: 600px;
+    height: 700px;
+    border: solid 3px;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.imagen img{
+    background-image: url(./imágenesPracticaRA2/fototrabajo.JPG);
+    background-size: cover;
+    position: relative;
+    left: 2%;
+    height: 500px;
+    padding-left: 10px;
+    padding-top: 10px;
+    transition: transform 1s;
+}
+
+.imagen img:hover {
+    
+    transform: rotateY(180deg);
+}
+
+.marco .nombre p{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600px;
+    height: 20%;
+    bottom: calc(50% - 350px);
+    margin-bottom: 10px;
+    right: calc(50% - 300px);
+    font-weight: bold;
+    font-size: 30px;
+    background-color: var(--otro);
+}
+
+.pregunta{
+    position: absolute;
+    top: 45%;
+    left: 6%;
+    font-size: 50px;
+    animation: parpadeo 2s infinite;
+}
+
+@keyframes parpadeo{
+    0%, 100% { opacity: 1; }
+    50%      { opacity: 0; }
+}
+
+.redes{
+    position: absolute; 
+    width: 100%;
+    bottom: 30px;
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-evenly;
+    align-items: center;
+    
+    border: var(--color-fondoP) solid;
+}
+
+.redes .r1, .r2, .r3{
+    margin: 10px;
+    font-size: 30px;
+    color: black;
+    text-decoration: double;
+}
+
+/*SOBRE MÍ*/
+
+body{
+    background-color: var(--color-fondo);
+}
+
+
+.tituloP{
+    display: flex;
+    justify-content: center;
+    color: var(--color-primario);
+    background-color: var(--color-fondoP);
+    text-align: center;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    font-size: 30px;
+}
+
+
+/*.seccion{
+    position: absolute;
+    width: 400px;
+    left: calc(50% - 200px);
+    top: 400px;
+    border-radius: 60%;
+    color: var(--color-primario);
+    background-color: var(--color-fondoP);
+    font-size: 30px;
+    text-align: center;
+}*/
+
+
+.nav2{
+    position: absolute;
+    right: 15%;
+    top: 12%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    height: 200px;
+    background-color: var(--color-fondo);
+    border-style: dashed;
+    border-color: var(--color-fondoP);
+}
+
+.nav2 a{
+    color: black;
+    text-decoration: double;
+    border: var(--color-fondoP) solid;
+    padding: 20px;
+    transition: transform 0.3s, font-weight 0.3s;
+    font-size: 30px;
+}
+
+.nav2 a:hover{
+    font-weight: bold;  
+    transform: scale(1.1);
+    background-color: var(--otro);
+}
+
+#SM{
+    font-weight: bold;  
+    background-color: var(--otro);
+}
+
+.descripcion{
+    position: absolute;
+    left: 10%;
+    font-size: 35px;
+    top: 40%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    border: solid 4px var(--otro);
+}
+
+.descripcion p{
+    padding: 5%;
+}
+
+.listaSM{
+    position: absolute;
+    right: 10%;
+    font-size: 35px;
+    top: 28%;
+    display: flex;
+    text-align: left;    
+    border: solid 4px var(--otro);
+}
+
+.listaSM li{
+    padding: 3%;
+    
+}
+
+
+/*PROYECTOS*/
+
+
+body{
+    background-color: var(--color-fondo);
+}
+
+
+.tituloP{
+    display: flex;
+    justify-content: center;
+    color: var(--color-primario);
+    background-color: var(--color-fondoP);
+    text-align: center;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    font-size: 30px;
+}
+
+.nav3{
+    position: absolute;
+    right: 15%;
+    top: 12%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    height: 200px;
+    background-color: var(--color-fondo);
+    border-style: dashed;
+    border-color: var(--color-fondoP);
+}
+
+.nav3 a{
+    color: black;
+    text-decoration: double;
+    border: var(--color-fondoP) solid;
+    padding: 20px;
+    transition: transform 0.3s, font-weight 0.3s;
+    font-size: 30px;
+}
+
+.nav3 a:hover{
+    font-weight: bold;  
+    transform: scale(1.1);
+    background-color: var(--otro);
+}
+
+#P{
+    font-weight: bold;  
+    background-color: var(--otro);
+}
+
+.tablaAficiones{
+    position: absolute;
+    width: 900px;
+    height: 200px;
+    top: 40%;
+    left: calc(50% - 450px);
+    font-size: 30px;
+    caption-side: top;
+    table-layout: auto;
+    border-collapse: collapse;
+    
+    text-align: center;
+}
+
+.tablaAficiones th, td, tr{
+    border: 4px solid black;
+}
+
+.tablaAficiones caption{
+    border: 4px double black;
+    align-items: center;
+    text-transform: uppercase;
+}
+
+.tablaAficiones #a{
+    background-color: var(--color-fondoP);
+}
+
+.tablaAficiones #b{
+    background-color: var(--otro);
+}
+
+.tablaAficiones th{
+    background-color: #fafeff93;
+}
+
+
+/*HABILIDADES*/
+
+body{
+    background-color: var(--color-fondo);
+}
+
+
+.tituloP{
+    display: flex;
+    justify-content: center;
+    color: var(--color-primario);
+    background-color: var(--color-fondoP);
+    text-align: center;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    font-size: 30px;
+}
+
+.nav4{
+    position: absolute;
+    right: 15%;
+    top: 12%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    height: 200px;
+    background-color: var(--color-fondo);
+    border-style: dashed;
+    border-color: var(--color-fondoP);
+}
+
+.nav4 a{
+    color: black;
+    text-decoration: double;
+    border: var(--color-fondoP) solid;
+    padding: 20px;
+    transition: transform 0.3s, font-weight 0.3s;
+    font-size: 30px;
+}
+
+.nav4 a:hover{
+    font-weight: bold;  
+    transform: scale(1.1);
+    background-color: var(--otro);
+}
+
+#H{
+    font-weight: bold;  
+    background-color: var(--otro);
+}
+
+.contenedor1 .imagen1{
+    background-image: url(./imágenesPracticara2/contenedor1.jpg);
+    background-attachment: fixed;
+    opacity: 0.25;
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-radius: 30%;
+}
+
+.contenedor1 {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    left: 10%;
+    top: calc(60% - 300px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 3px black;
+    border-radius: 30%;
+}
+
+.contenedor1 h1{
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contenedor1 p{
+    position: relative;
+    top: 15%;
+    font-size: 25px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    opacity: 1;
+}
+
+.contenedor2 .imagen2{
+    background-image: url(./imágenesPracticara2/contenedor2.jpg);
+    background-attachment: fixed;
+    opacity: 0.25;
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-radius: 30%;
+}
+
+.contenedor2 {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    left: 40%;
+    top: calc(60% - 300px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 3px black;
+    border-radius: 30%;
+}
+
+.contenedor2 h1{
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contenedor2 p{
+    position: relative;
+    top: 15%;
+    font-size: 25px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    opacity: 1;
+}
+
+.contenedor3 .imagen3{
+    background-image: url(./imágenesPracticara2/contenedor2.jpg);
+    background-attachment: fixed;
+    opacity: 0.25;
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    border-radius: 30%;
+}
+
+.contenedor3 {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    left: 70%;
+    top: calc(60% - 300px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 3px black;
+    border-radius: 30%;
+}
+
+.contenedor3 h1{
+    font-size: 35px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contenedor3 p{
+    position: relative;
+    top: 15%;
+    font-size: 25px;
+    text-align: center;
+    background-color: black;
+    color: white;
+    opacity: 1;
+}
+
+/*CONTACTO*/
+
+body{
+    background-color: var(--color-fondo);
+}
+
+
+.tituloP{
+    display: flex;
+    justify-content: center;
+    color: var(--color-primario);
+    background-color: var(--color-fondoP);
+    text-align: center;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    font-size: 30px;
+}
+
+.nav5{
+    position: absolute;
+    right: 15%;
+    top: 12%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70%;
+    height: 200px;
+    background-color: var(--color-fondo);
+    border-style: dashed;
+    border-color: var(--color-fondoP);
+}
+
+.nav5 a{
+    color: black;
+    text-decoration: double;
+    border: var(--color-fondoP) solid;
+    padding: 20px;
+    transition: transform 0.3s, font-weight 0.3s;
+    font-size: 30px;
+}
+
+.nav5 a:hover{
+    font-weight: bold;  
+    transform: scale(1.1);
+    background-color: var(--otro);
+}
+
+#C{
+    font-weight: bold;  
+    background-color: var(--otro);
+}
+
+.form{
+    position: absolute;
+    width: 700px;
+    left: calc(50% - 350px);
+    top: 40%;
+    font-size: 20px;
+    
+}
+
+.form .legend{
+    background-color: var(--color-fondoP);
+    font-size: 30px;
+   
+}
+
+.form fieldset{
+    border: solid 3px black;
+}
+
+.form .button{
+    position: absolute;
+    left: calc(50% - 50px);
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    background-color: var(--otro);
+}
+
+.form .textarea1, .textarea2{
+    width: 400px;
+    height: 100px;
+}
